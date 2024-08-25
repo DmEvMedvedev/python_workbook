@@ -1,0 +1,10 @@
+#Упражнение 4. Площадь садового участка
+#(Решено. 15 строк)
+#Создайте программу, запрашивающую у пользователя длину и ширину
+#садового участка в футах. Выведите на экран площадь участка в акрах.
+length=float(input("Garden's length (in feet)"))
+width=float(input("Garden's width (in feet)"))
+# acre=47560*sq.feet's
+area_acres=length*width/43650
+area_form="Your room's area is {}. acres".format(area_acres)
+print(area_form)

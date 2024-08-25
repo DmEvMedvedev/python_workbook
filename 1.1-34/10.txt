@@ -1,0 +1,22 @@
+#Упражнение 10. Арифметика
+#Создайте программу, которая запрашивает у пользователя два целых чис-
+#ла a и b, после чего выводит на экран результаты следующих математи-
+#ческих операций:
+#  сумма a и b;
+#  разница между a и b;
+#  произведение a и b;
+#  частное от деления a на b;
+#  остаток от деления a на b;
+#  десятичный логарифм числа a;
+#  результат возведения числа a в степень b.
+import math
+first_integer=int(input("The first integer ..."))
+second_integer=int(input("The second integer ..."))
+summ=first_integer+second_integer
+subtraction=first_integer-second_integer
+multiplication=first_integer*second_integer
+divis=first_integer/second_integer
+modulo=first_integer%second_integer
+log=math.log10(first_integer)
+degree=first_integer**second_integer
+print("Your results are %.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f." % (summ, subtraction, multiplication, divis, modulo, log, degree))
