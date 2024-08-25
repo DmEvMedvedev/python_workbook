@@ -28,4 +28,4 @@ It contains my solutions to the exersises from The Python Workbook, by B.Stephen
 ### **Глава 8. Рекурсия** (задачи 173-186)  
 - Суммирование целых чисел
 - Числа Фибоначчи
-- Подсчет символов
+- Подсчет символов.

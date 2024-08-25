@@ -1,0 +1,18 @@
+#Упражнение 9. Сложные проценты
+#Представьте, что вы открыли в банке сберегательный счет под 4 % годо-
+#вых. Проценты банк рассчитывает в конце года и добавляет к сумме счета.
+#Напишите программу, которая запрашивает у пользователя сумму перво-
+#начального депозита, после чего рассчитывает и выводит на экран сумму
+#на счету в конце первого, второго и третьего годов. Все суммы должны
+#быть округлены до двух знаков после запятой.
+deposit_amount=float(input("The amount of money deposited ..."))
+interest_per_year=4
+year=1
+compound_interest=float(deposit_amount*(1+interest_per_year/100)**year)
+print("Your first year compound interest is %.2f$" % compound_interest)
+year=2
+compound_interest=float(deposit_amount*(1+interest_per_year/100)**year)
+print("Your second year compound interest is %.2f$" % compound_interest)
+year=3
+compound_interest=float(deposit_amount*(1+interest_per_year/100)**year)
+print("Your third year compound interest is %.2f$" % compound_interest)
