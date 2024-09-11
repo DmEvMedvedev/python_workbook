@@ -1,0 +1,12 @@
+#Упражнение 22. Площадь треугольника (снова)
+#В предыдущем упражнении мы вычисляли площадь треугольника при из-
+#вестных длинах его основания и высоты. Но можно рассчитать площадь
+#и на основании длин всех трех сторон треугольника. Пусть s1, s2 и s3 – дли-
+#ны сторон, а s = (s1 + s2 + s3)/2. Тогда площадь треугольника может быть
+#вычислена по следующей формуле
+side_1=float(input("triangle's side 1 ..."))
+side_2=float(input("triangle's side 2 ..."))
+side_3=float(input("triangle's side 3 ..."))
+sides_sum=(side_1+side_2+side_3)/2
+square=(sides_sum*(sides_sum-side_1)*(sides_sum-side_2)*(sides_sum-side_3))**0.5
+print("The area of ​​a triangle with sides %.2f, %.2f and %.2f is %.2f square centimeters." % (side_1, side_2, side_2, square))

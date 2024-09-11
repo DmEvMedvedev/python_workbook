@@ -1,0 +1,10 @@
+#Упражнение 18. Объем цилиндра
+#Объем цилиндра может быть рассчитан путем умножения площади круга,
+#лежащего в его основе, на высоту. Напишите программу, в которой поль-
+#зователь будет задавать радиус цилиндра и его высоту, а в ответ получать
+#его объем, округленный до одного знака после запятой.
+import math
+radius=float(input("Radius (in sm)"))
+height=float(input("Height (in sm)"))
+volume=math.pi*radius**2*height
+print("The volume of a cylinder with a radius of %.2f centimeters and a height of %.2f centimeters is %.1f cubic centimeters." % (radius, height, volume))

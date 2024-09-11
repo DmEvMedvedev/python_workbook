@@ -1,0 +1,10 @@
+#Упражнение 21. Площадь треугольника
+#Площадь треугольника может быть вычислена с использованием следую­
+#щей формулы, где b – длина основания треугольника, а h – его высота:
+#Напишите программу, в которой пользователь сможет вводить значе-
+#ния для переменных b и h, после чего на экране будет отображена площадь
+#треугольника с заявленными основанием и высотой.
+height=float(input("triangle's height ..."))
+base=float(input("triangle's base ..."))
+square=height*base/2
+print("The area of ​​a triangle with a height of %.2f cm and a base of %.2f cm is equal to %.2f square centimeters." % (height, base, square))

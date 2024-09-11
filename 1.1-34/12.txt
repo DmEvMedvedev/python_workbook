@@ -23,6 +23,5 @@ p1_latitude_in_radians=math.radians(p1_latitude)
 p1_longitude_in_radians=math.radians(p1_longitude)
 p2_latitude_in_radians=math.radians(p2_latitude)
 p2_longitude_in_radians=math.radians(p2_longitude)
-distance=6371.01*arccos(sint(p1_latitude_in_radians)*sin(p2_latitude_in_radians)+cos(p1_latitude_in_radians)*cos(p2_latitude_in_radians)*cos(p1_longitude_in_radians-p2_longitude_in_radians))
+distance=6371.01*math.acos(math.sin(p1_latitude_in_radians)*math.sin(p2_latitude_in_radians)+math.cos(p1_latitude_in_radians)*math.cos(p2_latitude_in_radians)*math.cos(p1_longitude_in_radians-p2_longitude_in_radians))
 print("Distance between point1 and point2 is %.2f" % distance)
-

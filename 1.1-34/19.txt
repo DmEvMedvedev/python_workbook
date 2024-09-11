@@ -1,0 +1,10 @@
+#Упражнение 19. Свободное падение
+#Напишите программу для расчета скорости объекта во время его сопри-
+#косновения с землей. Пользователь должен задать высоту в метрах, с ко-
+#торой объект будет отпущен. Поскольку объекту не будет придаваться
+#ускорение, примем его начальную скорость за 0 м/с. Предположим, что
+#ускорение свободного падения равно 9,8 м/с2.
+height=float(input("Enter altitude"))
+muzzle_speed=float(input("Enter muzzle speed (default is zero)"))
+speed=(muzzle_speed**2+2*9.8*height)**0.5
+print("The speed at impact with the ground when falling from a height of %.2f meters is %.2f meters per second" % (height, speed))

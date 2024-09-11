@@ -1,0 +1,10 @@
+#Упражнение 24. Единицы времени
+#Создайте программу, в которой пользователь сможет ввести временной
+#промежуток в виде количества дней, часов, минут и секунд и узнать общее
+#количество секунд, составляющее введенный отрезок.
+days=int(input("Days"))
+hours=int(input("Hours"))
+minutes=int(input("Minutes"))
+secondes=int(input("Secondes"))
+total_secondes=days*86400+hours*3600+minutes*60+secondes
+print("The time period you specified is %.d" % total_secondes)
