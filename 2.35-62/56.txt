@@ -1,0 +1,24 @@
+#Упражнение 56. Определение частоты
+#Электромагнитные волны можно классифицировать по частоте на семь
+#категорий
+#Напишите программу, которая будет запрашивать у пользователя значе-
+#ние частоты волны и отображать название соответствующего излучения.
+
+length=float(input("Length is ..."))
+if length<3*10**9:
+    category="Radio waves"
+elif length<3*10**12:
+    category="Microwave"
+elif length<4.3*10**14:
+    category="Infrared radiation"
+elif length<7.5*10**14:
+    category="Visible radiation"
+elif length<3*10**17:
+    category="Ultraviolet radiation"
+elif length<3*10**19:
+    category="X-ray radiation"
+elif length>3*10**19:
+    category="Gamma radiation"
+
+print("Wave frequency ({}) corresponds to category {}".format (length, category))
+

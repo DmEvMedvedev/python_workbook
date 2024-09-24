@@ -1,0 +1,13 @@
+#Упражнение 33. Сортировка трех чисел
+#Напишите программу, запрашивающую у пользователя три целых числа
+#и выводящую их в упорядоченном виде – по возрастанию. Используйте
+#функции min и max для нахождения наименьшего и наибольшего значений.
+#Оставшееся число можно найти путем вычитания из суммы трех введен-
+#ных чисел максимального и минимального.
+number_1=int(input("The first number"))
+number_2=int(input("The second number"))
+number_3=int(input("The third number"))
+number_max=max(number_1, number_2, number_3)
+number_min=min(number_1, number_2, number_3)
+number_average=number_1+number_2+number_3-number_max-number_min
+print(number_min, number_average, number_max)

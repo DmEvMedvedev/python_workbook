@@ -1,0 +1,24 @@
+#Упражнение 47. Определение времени года
+#Год делится на четыре сезона: зима, весна, лето и осень. Хотя даты смены
+#сезонов каждый год могут меняться из-за особенностей календаря, мы
+#в данном упражнении примем допущения, перечисленные в табл. 2.9.
+#Весна 20 марта
+#Лето 21 июня
+#Осень 22 сентября
+#Зима 21 декабря
+#Разработайте программу, запрашивающую у пользователя день и ме-
+#сяц – сначала месяц в текстовом варианте, затем номер дня. На выходе
+#программа должна выдать название сезона, которому принадлежит вы-
+#бранная дата.
+
+month=input("Month")
+day=int(input("Day"))
+if month=="december" and day>20 or month=="january" or month=="february" or month=="march" and day<20:
+    season="winter"
+elif month=="march" and day>19 or month=="april" or month=="may" or month=="june" and day<21:
+    season="spring"
+elif month=="june" and day>20 or month=="july" or month=="august" or month=="september" and day<22:
+    season="summer"
+else:
+    season="autumn"
+print("It's {} now".format(season))

@@ -1,0 +1,17 @@
+#Упражнение 34. Вчерашний хлеб
+#Пекарня продает хлеб по $3,49 за буханку. Скидка на вчерашний хлеб со-
+#ставляет 60 %. Напишите программу, которая будет запрашивать у пользо-
+#вателя количество приобретенных вчерашних буханок хлеба. В вывод на
+#экран должны быть включены обычная цена за буханку, цена со скидкой
+#и общая стоимость приобретенного хлеба. Все значения должны быть вы-
+#ведены на отдельных строках с соответствующими описаниями. Исполь-
+#зуйте для вывода формат с двумя знаками после запятой и выровненным
+#разделителем.
+loaves_number=int(input("How many loaves of yesterday's bread did you buy"))
+loaf=3.49
+discount=0.6
+yesterday_loaf=(1-discount)*3.49
+purchase_sum=yesterday_loaf*loaves_number
+print("Loaf price is %.2f $" % loaf)
+print("Loaf price for yesterday's loaf is %.2f $" % yesterday_loaf)
+print("Loaves purchase sum for yesterday's loaf is %.2f $" % purchase_sum)

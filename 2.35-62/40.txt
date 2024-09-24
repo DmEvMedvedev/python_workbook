@@ -1,0 +1,28 @@
+#Упражнение 40. Громкость звука
+#В табл. представлен уровень громкости в децибелах для некоторых распространенных источников шума.
+#Отбойный молоток 130 дБ
+#Газовая газонокосилка 106 дБ
+#Будильник 70 дБ
+#Тихая комната 40 дБ
+#Создайте программу, в которой пользователь будет вводить уровень шума в децибелах. Если введенное им значение будет в точности совпа-
+#дать с одним из значений в приведенной таблице, необходимо вывести, чему соответствует указанный уровень громкости. Если значение попа-
+#дет между уровнями в таблице, нужно сообщить, между какими именно. Также программа должна выдавать корректные сообщения, в случае если
+#введенное пользователем значение окажется ниже минимального или больше максимального.
+
+noise=float(input("Noise is ..."))
+if noise>130 or noise<40:
+    print("It is impossible to correlate the noise level")
+elif noise == 130:
+    print("It looks like you are next to a jackhammer")
+elif noise>106:
+    print("You're somewhere between a jackhammer and a gas lawn mower")
+elif noise == 106:
+    print("It looks like you are next to a gas lawn mower")
+elif noise>70:
+    print("You're somewhere between an alarm clock and a gas lawn mower")
+elif noise == 70:
+    print("It looks like you are next to the alarm clock")
+elif noise>40:
+    print("The alarm clock is ringing in your quiet room")
+elif noise == 40:
+    print("It looks like you are in a quiet room")

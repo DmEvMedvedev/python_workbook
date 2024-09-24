@@ -1,0 +1,13 @@
+#Упражнение 30. Цельсий в Фаренгейт и Кельвин
+#Напишите программу, которая будет запрашивать у пользователя значение
+#температуры в градусах Цельсия и отображать эквивалентный показатель
+#по шкалам Фаренгейта и Кельвина. Необходимые коэффициенты и фор-
+#мулы для проведения расчетов нетрудно найти на просторах интернета.
+temperature_system=input("Specify what your temperature will be measured in: Celsius or Fahrenheit (letter C or F only)")
+temperature=float(input("Temperature is ... "))
+if temperature_system == "C":
+    temperature_new=temperature*9/5+32
+    print("The temperature you entered in Celsius (%.2f) is equal to %.2f Fahrenheit" % (temperature, temperature_new))
+else:
+    temperature_new=(temperature-32)*5/9
+    print("The temperature you entered in Fahrenheit (%.2f) is equal to %.2f Celsius" % (temperature, temperature_new))

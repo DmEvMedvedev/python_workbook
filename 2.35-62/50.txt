@@ -1,0 +1,30 @@
+#Упражнение 50. Шкала Рихтера
+#В табл. 2.12 приведены диапазоны магнитуд землетрясений по шкале
+#Рихтера с описаниями.
+#Ваша программа должна запрашивать у пользователя магнитуду земле-
+#трясения по шкале Рихтера и выводить на экран описание уровня, соот-50  Упражнения
+#ветствующего введенному значению. Например, если пользователь вве-
+#дет значение 5,5, нужно вывести сообщение о том, что этой магнитуде
+#соответствует умеренный уровень землетрясения.
+
+earthquake=float(input("Enter Richter scale value"))
+if earthquake<2:
+    type="minimum"
+elif earthquake<3:
+    type="very weak"
+elif earthquake<4:
+    type="weak"
+elif earthquake<5:
+    type="intermediate"
+elif earthquake<6:
+    type="moderate"
+elif earthquake<7:
+    type="strong"
+elif earthquake<8:
+    type="very strong"
+elif earthquake<10:
+    type="huge"
+else:
+    type="destructive"
+
+print("The value you entered on the Richter scale ({}) corresponds to {} earthquakes".format (earthquake, type))

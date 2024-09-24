@@ -1,0 +1,25 @@
+#Упражнение 44. Портреты на банкнотах
+#Во многих странах существует традиция помещать портреты своих быв-
+#ших политических лидеров или других выдающихся личностей на банк-
+#ноты.
+#Напишите программу, которая будет запрашивать у пользователя но-
+#минал банкноты и отображать на экране имя деятеля, портрет которого
+#размещен на соответствующем денежном знаке. Если банкноты введен-
+#ного номинала не существует, должно выводиться сообщение об ошибке.
+denomination=input("Denomination is ...")
+if denomination=="1":
+    print("There's a portrait of {} on your $ {} bill".format ("GW", denomination))
+elif denomination=="2":
+    print("There's a portrait of {} on your $ {} bill".format ("TJ", denomination))
+elif denomination=="5":
+    print("There's a portrait of {} on your $ {} bill".format ("AL", denomination))
+elif denomination=="10":
+    print("There's a portrait of {} on your $ {} bill".format ("AH", denomination))
+elif denomination=="20":
+    print("There's a portrait of {} on your $ {} bill".format ("AJ", denomination))
+elif denomination=="50":
+    print("There's a portrait of {} on your $ {} bill".format ("UH", denomination))
+elif denomination=="100":
+    print("There's a portrait of {} on your $ {} bill".format ("BF", denomination))
+else:
+    print("Enter the existing banknote denomination")

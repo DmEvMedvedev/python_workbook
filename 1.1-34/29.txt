@@ -1,0 +1,16 @@
+#Упражнение 28. Индекс массы тела
+#Напишите программу для расчета индекса массы тела (body mass index –
+#BMI) человека. Пользователь должен ввести свой рост и вес, после чего вы
+#используете одну из приведенных ниже формул для определения индекса.
+#Если пользователь вводит рост в дюймах, а вес в фунтах, формула будет
+#следующей:
+#Если же пользователь предпочитает вводить информацию о себе в сан-
+#тиметрах и килограммах, формула упростится и станет такой:
+number_system=input("Enter Y if your number system is in pounds and inches, or N if in kilograms and centimeters (note, use only Y or N)")
+weight=float(input("Weight is ..."))
+height=float(input("Height is ..."))
+if number_system == "Y":
+    BMI=((weight/height**2)*703)*10000
+else:
+    BMI=(weight/height**2)*10000
+print("Your body mass index is ", BMI)

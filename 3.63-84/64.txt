@@ -1,0 +1,18 @@
+#Упражнение 64. Таблица со скидками
+#В магазине была объявлена скидка размером 60 % на ряд товаров, и для
+#того чтобы покупатели лучше ориентировались, владелец торговой точки
+#решил вывесить отдельную таблицу со скидками с указанием уцененных
+#товаров и их оригинальных цен. Используйте цикл для создания подобной
+#таблицы, в которой будут исходные цены, суммы скидок и новые цены для
+#покупок на сумму $4,95, $9,95, $14,95, $19,95 и $24,95. Убедитесь в том,
+#что суммы скидки и новые цены отображаются с двумя знаками после
+#запятой.
+
+item_price=float(input("This item price is ..."))
+if item_price==4.95 or item_price==9.95 or item_price==14.95 or item_price==19.95 or item_price==24.95:
+    discount=0.6
+    new_price=item_price*discount
+    benefit=item_price-new_price
+    print(f'New price is {new_price}$. Your benefit is {benefit}$. Discount is {discount*100}%, old price is {item_price}$')
+else:
+    print(f'The price of this product is {item_price:.2f}$. No discount is provided')

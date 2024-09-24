@@ -1,0 +1,63 @@
+#Упражнение 57. Счет за телефон
+#Тарифный план мобильной связи включает в себя 50 минут разговоров
+#и 50 смс-сообщений за $15,00 в месяц. Каждая дополнительная минута
+#стоит $0,25, а каждое дополнительное сообщение – $0,15. Все счета за
+#телефон включают налог на поддержку кол-центров 911 в размере $0,44,
+#и общая сумма, включающая сумму отчислений кол-центрам, облагается
+#налогом в размере 5 %.
+#Напишите программу, которая будет запрашивать у пользователя ко-
+#личество израсходованных за месяц минут разговора и смс-сообщенийПринятие решений  53
+#и отобра­жать базовую сумму тарификации, сумму за дополнительные мину-
+#ты и сообщения, сумму отчислений кол-центрам 911, налог, а также итого-
+#вую сумму к оплате. При этом дополнительные звонки и сообщения необхо-
+#димо выводить на экран только в случае их расходования. Убедитесь в том,
+#что все суммы отображаются в формате с двумя знаками после запятой.
+
+minutes=int(input("Minutes ..."))
+messages=int(input("Messages ..."))
+tariff_basic=15
+call_centers_tax=0.44
+general_tax=0.05
+extra_minutes_cost=0
+extra_messages_cost=0
+
+if minutes>50:
+    extra_minutes=minutes-50
+    extra_minutes_cost=extra_minutes*0.25
+if messages>50:
+    extra_messages=messages-50
+    extra_messages_cost=extra_messages*0.15
+
+total_cost_without_general_tax=tariff_basic+call_centers_tax+extra_minutes_cost+extra_messages_cost
+general_tax_cost=total_cost_without_general_tax*general_tax
+cost_total=total_cost_without_general_tax+general_tax_cost
+
+if minutes<=50 and messages<=50:
+    print ("Basic cost of the tariff {}$, "
+            "amount of deductions to call centers "
+            "{}$, tax {}$, total amount to "
+            "be paid {}$."
+            .format (round(tariff_basic,2), round(call_centers_tax,2),
+            round(general_tax_cost,2), round(cost_total,2)))
+elif minutes>50 and messages<=50:
+    print ("Basic cost of the tariff {}$, cost of additional minutes {}$,"
+            "amount of deductions to call centers "
+            "{}$, tax {}$, total amount to "
+            "be paid {}$."
+            .format (round(tariff_basic,2), round(extra_minutes_cost,2), round(call_centers_tax,2),
+            round(general_tax_cost,2), round(cost_total,2)))
+elif minutes<=50 and messages>50:
+    print ("Basic cost of the tariff {}$, cost of additional messages {}$, "
+            "amount of deductions to call centers "
+            "{}$, tax {}$, total amount to "
+            "be paid {}$."
+            .format (round(tariff_basic,2), round(extra_messages_cost,2), round(call_centers_tax,2),
+            round(general_tax_cost,2), round(cost_total,2)))
+elif minutes>50 and messages>50:
+    print ("Basic cost of the tariff {}$, cost of additional minutes {}$, "
+            "cost of additional messages {}$, "
+            "amount of deductions to call centers "
+            "{}$, tax {}$, total amount to "
+            "be paid {}$."
+            .format (round(tariff_basic,2), round(extra_minutes_cost,2), round(extra_messages_cost,2), round(call_centers_tax,2),
+            round(general_tax_cost,2), round(cost_total,2)))

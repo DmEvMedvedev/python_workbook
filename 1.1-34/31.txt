@@ -1,0 +1,11 @@
+#Упражнение 31. Единицы давления
+#В данном задании вам предстоит написать программу, которая будет пе-
+#реводить введенное пользователем значение давления в килопаскалях
+#(кПа) в фунты на квадратный дюйм (PSI), миллиметры ртутного столба
+#и атмосферы. Коэффициенты и формулы для перевода найдите само-
+#стоятельно.
+pression_kpa=float(input("Pressure is ... (kpa)"))
+pression_PSI=pression_kpa/6.8948
+pression_mmHg=pression_kpa/0.1333
+pression_atm=pression_kpa/101.325
+print("%.2f kpa is equal to %.2f psi or %.2f mmHg or %.2f pression_atm" % (pression_kpa, pression_PSI, pression_mmHg, pression_atm))

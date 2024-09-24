@@ -1,0 +1,34 @@
+#Упражнение 48. Знаки зодиака
+#В гороскопах, наполняющих газеты и журналы, астрологи пытаются по-
+#ложение солнца в момент рождения человека как-то связать с его судьбой.
+#Всего насчитывается 12 знаков зодиака
+#Напишите программу, запрашивающую у пользователя дату его рожде-
+#ния и выводящую на экран соответствующий знак зодиака.
+
+month=input("Month")
+day=int(input("Day"))
+if month=="december" and day>21 or month=="january" and day<20:
+    sign="Capricorn"
+elif month=="january" and day>19 or month=="february" and day<19:
+    sign="Aquarius"
+elif month=="february" and day>19 or month=="march" and day<21:
+    sign="Fish"
+elif month=="march" and day>20 or month=="april" and day<20:
+    sign="Aries"
+elif month=="april" and day>19 or month=="may" and day<21:
+    sign="Taurus"
+elif month=="may" and day>20 or month=="june" and day<21:
+    sign="Twins"
+elif month=="june" and day>20 or month=="july" and day<23:
+    sign="Cancer"
+elif month=="july" and day>22 or month=="august" and day<23:
+    sign="Lion"
+elif month=="august" and day>22 or month=="september" and day<23:
+    sign="Virgo"
+elif month=="september" and day>22 or month=="october" and day<23:
+    sign="Scales"
+elif month=="october" and day>22 or month=="november" and day<22:
+    sign="Scorpion"
+else:
+    sign="Sagittarius"
+print("Your zodiac sign is", sign)

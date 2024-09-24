@@ -1,0 +1,22 @@
+#Упражнение 61. Действительный номерной знак машины?
+#Допустим,в нашей стране старый формат номерных знаков автомоби-
+#лей состоял из трех заглавных букв,следом за которыми шли три цифры.
+#Пос­ле того как все возможные номера были использованы,формат был
+#изменен на четыре цифры,предшествующие трем заглавным буквам.
+#Напишите программу,запрашивающую у пользователя номерной знак
+#машины и оповещающую о том,для какого формата подходит данная по-
+#следовательность символов: для старого или нового. Если введенная по-
+#следовательность не соответствует ни одному из двух форматов,укажите
+#это в сообщении.
+
+car_number=input("Car number is ...")
+car_number_upper=car_number.upper()
+length=len(car_number_upper)
+letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+numbers=["0","1","2","3","4","5","6","7","8","9"]
+if length==6 and car_number_upper[0] in letters and car_number_upper[1] in letters and car_number_upper[2] in letters and car_number_upper[3] in numbers and car_number_upper[4] in numbers and car_number_upper[5] in numbers:
+    print("This is the old license plate format")
+elif length==7 and car_number_upper[0] in numbers and car_number_upper[1] in numbers and car_number_upper[2] in numbers and car_number_upper[3] in numbers and car_number_upper[4] in letters and car_number_upper[5] in letters and car_number_upper[6] in letters:
+    print("This is the new license plate format")
+else:
+    print("Number format is incorrect")

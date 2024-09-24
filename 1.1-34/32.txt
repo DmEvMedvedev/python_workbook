@@ -1,0 +1,12 @@
+#Упражнение 32. Сумма цифр в числе
+#Разработайте программу, запрашивающую у пользователя целое четы-
+#рехзначное число и подсчитывающую сумму составляющих его цифр. На-
+#пример, если пользователь введет число 3141, программа должна вывести
+#следующий результат: 3 + 1 + 4 + 1 = 9.
+number=input("enter any four digit number")
+thousands=int(str(number)[0])
+hundreds=int(str(number)[1])
+tens=int(str(number)[2])
+units=int(str(number)[3])
+sum=thousands+hundreds+tens+units
+print("The sum of the digits is", sum)

@@ -1,0 +1,29 @@
+#Упражнение 43. Узнать ноту по частоте
+#В предыдущем упражнении мы определяли частоту ноты по ее назва-
+#нию и номеру октавы. Теперь выполним обратную операцию. Запроси-46  Упражнения
+#те у пользователя частоту звука. Если введенное значение укладывается
+#в диапазон ±1 Гц от значения в таблице, выведите на экран название
+#соответствующей ноты. В противном случае сообщите пользователю,
+#что ноты, соответствующей введенной частоте, не существует. В данном
+#упражнении можно ограничиться только нотами, приведенными в табли-
+#це. Нет необходимости брать в расчет другие октавы.
+frequency=float(input("Frequency is ..."))
+if frequency<260.63 or frequency>494.88:
+    print("Yout note is not from 4th octave")
+elif frequency>=260.63 and frequency<=262.63:
+    print("Your note is C")
+elif frequency>=292.66 and frequency<=294.66:
+    print("Your note is D")
+elif frequency>=328.63 and frequency<=30.63:
+    print("Your note is E")
+elif frequency>=348.23 and frequency<=350.23:
+    print("Your note is F")
+elif frequency>=391.00 and frequency<=393.00:
+    print("Your note is G")
+elif frequency>=439.00 and frequency<=441:
+    print("Your note is A")
+elif frequency>=492.88 and frequency<=494.88:
+    print("Your note is B")
+else:
+    print("Yout note is not from 4th octave")
+
